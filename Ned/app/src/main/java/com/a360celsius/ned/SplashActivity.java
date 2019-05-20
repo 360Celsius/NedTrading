@@ -1,6 +1,6 @@
 package com.a360celsius.ned;
 
-import android.databinding.DataBindingUtil;
+import androidx.databinding.DataBindingUtil;
 import android.os.Bundle;
 import com.a360celsius.ned.databinding.ActivitySplashBinding;
 

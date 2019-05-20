@@ -1,12 +1,10 @@
 package com.a360celsius.ned;
 
 import android.os.Bundle;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
+import androidx.appcompat.app.AppCompatActivity;
 import android.view.Window;
 import android.view.WindowManager;
-
-import com.a360celsius.ned.R;
 
 public class BaseActivity extends AppCompatActivity {
 
