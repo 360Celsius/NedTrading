@@ -6,11 +6,21 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.view.Window;
 import android.view.WindowManager;
 
+import com.a360celsius.retrofit.RetrofitClient;
+import com.a360celsius.application.NedApplication;
+
+import javax.inject.Inject;
+
 public class BaseActivity extends AppCompatActivity {
+
+    @Inject
+    RetrofitClient retrofitClient;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        NedApplication.getMyComponent().inject(this);
 
         Window window = getWindow();
 
