@@ -14,10 +14,12 @@ public class RetrofitClient {
     @Inject
     public RetrofitClient() {
         retrofit = new Retrofit.Builder()
-                .baseUrl("")
+                .baseUrl(BaseUrl.BASE_URL)
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
     }
 
-
+    public static Retrofit getRetrofit() {
+        return retrofit;
+    }
 }
